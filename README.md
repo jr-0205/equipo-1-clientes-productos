@@ -29,7 +29,7 @@ persistente y ejecutados con **Docker Compose**. Cumplen el reglamento común de
 ## 2. Estructura
 
 ```text
-Equipo-1-Clientes-y-Productos/
+equipo-1-clientes-productos/
 |-- clientes/
 |   |-- app.js
 |   |-- package.json
@@ -54,8 +54,8 @@ Equipo-1-Clientes-y-Productos/
 ## 4. Ejecutar
 
 ```powershell
-git clone https://github.com/jr-0205/Equipo-1-Clientes-y-Productos.git
-cd Equipo-1-Clientes-y-Productos
+git clone https://github.com/jr-0205/equipo-1-clientes-productos.git
+cd equipo-1-clientes-productos
 node configurar-ips.mjs          # genera el .env a partir de ip-path
 docker compose up --build -d
 docker compose ps                # ambos servicios deben aparecer "healthy"
@@ -144,7 +144,7 @@ Los servicios insertan datos de ejemplo cuando la base está vacía.
 Los otros equipos **no** configuran nada dentro de este repositorio: ellos escriben la IP de
 esta computadora en **su** archivo `.env`.
 
-Equipo 2 (`Equipo-2-Pedidos-y-Pagos/.env`):
+Equipo 2 (`equipo-2-pedidos-pagos/.env`):
 
 ```env
 CLIENTES_URL=http://IP-EQUIPO-1:2501
